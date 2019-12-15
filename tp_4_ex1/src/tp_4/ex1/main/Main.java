@@ -26,9 +26,7 @@ public class Main {
 		for (int i = 0; i < users.length; i++) {
 			
 			if (users[i].equals(login, password)) {
-				
 				authUser = users[i];
-				
 			}
 		}
 
