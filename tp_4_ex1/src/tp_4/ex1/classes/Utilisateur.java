@@ -46,4 +46,19 @@ public class Utilisateur extends Personne {
 		System.out.println(this.toString());
 		this.AfficherPersonne();
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((login == null) ? 0 : login.hashCode());
+		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		return result;
+	}
+
+	public boolean equals(String login, String password) {
+		return this.login.equals(login) && this.password.equals(password);
+	}
+	
+	
 }
